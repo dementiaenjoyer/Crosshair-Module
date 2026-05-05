@@ -92,7 +92,7 @@ do
 		Module.Position = Vector2Zero;
 		Module.Thickness = 1;
 
-		Module.Rotation = 32;
+		Module.Rotation = 0;
 		Module.Length = 7;
 
 		Module.Alpha = 255;
