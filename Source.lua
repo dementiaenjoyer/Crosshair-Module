@@ -106,6 +106,8 @@ do
 	do
 		function Module : Initiate( Parent )
 			Label.Parent = ( Parent or InstanceNew( "ScreenGui", LocalPlayer.PlayerGui ) );
+            
+            return Label;
 		end
 
 		function Module : Impulse( Value )
