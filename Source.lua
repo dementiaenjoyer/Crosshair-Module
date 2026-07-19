@@ -105,7 +105,10 @@ do
 	-- API
 	do
 		function Module : Initiate( Parent )
-			Label.Parent = ( Parent or InstanceNew( "ScreenGui", LocalPlayer.PlayerGui ) );
+			local ScreenGui = InstanceNew( "ScreenGui", Parent or LocalPlayer.PlayerGui );
+			
+			ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
+			Label.Parent = ScreenGui;
             
             return Label;
 		end
