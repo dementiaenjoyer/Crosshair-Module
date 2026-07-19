@@ -108,6 +108,8 @@ do
 			local ScreenGui = InstanceNew( "ScreenGui", Parent or LocalPlayer.PlayerGui );
 			
 			ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
+			ScreenGui.IgnoreGuiInset = true;
+
 			Label.Parent = ScreenGui;
             
             return Label;
